@@ -62,7 +62,7 @@ app.post("/failure", (req, res) =>{
     res.redirect("/");
 })
 
-app.listen(3000, ()=> console.log("Server is running"));
+app.listen(process.env.PORT||3000, ()=> console.log("Server is running"));
 
 // api key
 // a468aaaa090cf5dc2af9ae3572952503-us6         
